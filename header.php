@@ -9,20 +9,19 @@
 </head>
 <body>
     
-  <header class="p-3 mb-3 border-bottom">
+  <header class="p-3 mb-3 bg-dark text-white border-bottom">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
           <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
         </a>
 
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <ul class=" nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             
-             <li><i class="fa-solid fa-house"></i>
-            <a href="/accueil" class="nav-link px-2 link-secondary">ACCUEIL</a></li>
-          <li><a href="/produit" class="nav-link px-2 link-body-emphasis">Liste des produits</a></li>
-          <li><a href="#" class="nav-link px-2 link-body-emphasis">Customers</a></li>
-          <li><a href="#" class="nav-link px-2 link-body-emphasis">Products</a></li>
+          <li><a href="/accueil" class="nav-link px-2 link-secondary text-white">ACCUEIL</a></li>
+          <li><a href="/produits" class="nav-link px-2 link-body-emphasis text-white">PRODUITS</a></li>
+          <li><a href="/categorie" class="nav-link px-2 link-body-emphasis text-white">CATEGORIES</a></li>
+          <li><a href="#" class="nav-link px-2 link-body-emphasis text-white">Products</a></li>
         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
