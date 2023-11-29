@@ -18,11 +18,10 @@
 
         <ul class=" nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             
-          <li><a href="/accueil" class="nav-link px-2 link-secondary text-white">ACCUEIL</a></li>
-          <li><a href="/produits" class="nav-link px-2 link-body-emphasis text-white">PRODUITS</a></li>
-          <li><a href="/categorie" class="nav-link px-2 link-body-emphasis text-white">CATEGORIES</a></li>
-          <li><a href="#" class="nav-link px-2 link-body-emphasis text-white">Products</a></li>
-        </ul>
+          <li><a href="/accueil" class="nav-link px-2 link-secondary text-white"><i class="fa-solid fa-house"></i> ACCUEIL</a></li>
+          <li><a href="/produits" class="nav-link px-2 link-body-emphasis text-white"><i class="fa-solid fa-bag-shopping"></i> PRODUITS</a></li>
+          <li><a href="/categorie" class="nav-link px-2 link-body-emphasis text-white"><i class="fa-solid fa-list"></i> CATEGORIES</a></li>
+         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
           <input type="search" class="form-control" placeholder="Search..." aria-label="Search">

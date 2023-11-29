@@ -16,7 +16,7 @@ $categories[2]=[
  "id"=>3,
  "nom"=>"sport",
  ]; 
-var_dump($categories);
+// var_dump($categories);
 // si je veux afficher les données du tableau
 // dans les cards
 // je boucle foreach
