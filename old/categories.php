@@ -8,7 +8,7 @@ $statement=$pdo->query("select * from categorie");
 
 // 3 recuperation des données
 $categories=$statement->fetchAll(PDO::FETCH_ASSOC);
-var_dump($categories);
+// var_dump($categories);
 
 
 // afficher une liste de produits.

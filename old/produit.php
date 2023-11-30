@@ -14,7 +14,7 @@ $statement->bindParam(':id_protege', $id, PDO::PARAM_INT);
 $statement->execute();
 // 3 . Recupere
 $produit=$statement->fetch(PDO::FETCH_ASSOC);
-var_dump($produit);
+// var_dump($produit);
 // tableau via la B.D.
 
 // tableau de produits 

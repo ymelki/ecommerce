@@ -9,7 +9,7 @@ $statement=$pdo->query("select * from categorie  where id = $id");
 
 // 3 . Recupere
 $categorie=$statement->fetch(PDO::FETCH_ASSOC);
-var_dump($categorie);
+// var_dump($categorie);
 // tableau via la B.D.
 
 // tableau de produits 
