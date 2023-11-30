@@ -5,8 +5,13 @@ $id=$_GET['id'];
 $pdo = new \PDO('mysql:host=localhost;dbname=ecommerce', 'root', '');
 
 // 2 . Requete 
-$statement=$pdo->query("select * from produit  where id = $id");
+// select * from produit  where id = $id ; truncate table produit;
+// $statement=$pdo->query("select * from produit  where id = $id");
 
+$statement=$pdo->prepare("select * from produit  where id = :id_protege");
+$statement->bindParam(':id_protege', $id, PDO::PARAM_INT);
+
+$statement->execute();
 // 3 . Recupere
 $produit=$statement->fetch(PDO::FETCH_ASSOC);
 var_dump($produit);
