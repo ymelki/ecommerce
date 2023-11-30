@@ -18,11 +18,20 @@ if ($page==="/accueil"){
 elseif ($page==="/produits"){
   include "produits.php";
 }
+elseif ($page==="/categories"){
+  include "categories.php";
+}
 elseif ($page==="/categorie"){
   include "categorie.php";
 }
 elseif ($page==="/produit"){
   include "produit.php";
+}
+elseif ($page==="/creerproduit"){
+  include "creerproduit.php";
+}
+elseif ($page==="/enregistrerproduit"){
+  include "enregistrerproduit.php";
 }
 else {
   include "erreur.php";

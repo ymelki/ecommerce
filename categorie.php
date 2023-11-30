@@ -1,44 +1,46 @@
 <?php
+$id=$_GET['id'];
+// remplacer les tableau en B.D.
+// 1 . Connecte à la B.D.
+$pdo = new \PDO('mysql:host=localhost;dbname=ecommerce', 'root', '');
 
-// afficher une liste de produits.
-// produit issue de la B.D.
-// recupere des données et on a les affiche avec
-// foreach et le bootstrap pour le jolie.
-$categories[0]=[
- "id"=>1,
- "nom"=>"multimedia",
- ];
-$categories[1]=[
- "id"=>2,
- "nom"=>"lecture",
- ];
-$categories[2]=[
- "id"=>3,
- "nom"=>"sport",
- ]; 
-// var_dump($categories);
-// si je veux afficher les données du tableau
-// dans les cards
-// je boucle foreach
-?>
-<div class="row row-cols-1 row-cols-md-3 g-4">
+// 2 . Requete 
+$statement=$pdo->query("select * from categorie  where id = $id");
 
-<?php
-foreach ($categories as $uneCategorie){ ?>
-<div class="col">
-   <div class="card h-100">
-     <img src="..." class="card-img-top" alt="...">
-     <div class="card-body">
-       <h5 class="card-title"><?=$uneCategorie['nom']; ?></h5>
-       <p class="card-text"> </p>
-     </div>
-   </div>
- </div>
-  
+// 3 . Recupere
+$categorie=$statement->fetch(PDO::FETCH_ASSOC);
+var_dump($categorie);
+// tableau via la B.D.
+
+// tableau de produits 
+// $produits[0]=[
+//     "id"=>1,
+//     "nom"=>"ordinateur",
+//     "prix"=>3000
+//   ];
+//   $produits[1]=[
+//     "id"=>2,
+//     "nom"=>"livre",
+//     "prix"=>50
+//   ];
+//   $produits[2]=[
+//     "id"=>3,
+//     "nom"=>"telephone",
+//     "prix"=>100
+//   ];
+//   $produits[3]=[
+//     "id"=>4,
+//     "nom"=>"trotinnete",
+//     "prix"=>300
+//   ];
+// // var_dump($_GET);
+// $id=$_GET['id']-1;
+// 
+
+// ID <?=$produits[$id]['id'];  ?><br>
 <?php 
-}
+// Nom : <?=$produits[$id]['nom'];  ?> <br>
+<?php // Prix : <?=$produits[$id]['prix'];  ?><br>
+<?php // La page du produit
 ?>
-
-</div>
-Liste des produits
-
+Nom : <?=$categorie['nom'];  ?> <br>

@@ -10,11 +10,11 @@
 $pdo = new \PDO('mysql:host=localhost;dbname=ecommerce', 'root', '');
 
 // 2 . Requete 
-$statement=$pdo->query("select * from produit  ");
+$statement=$pdo->query("select * from produit");
 
 // 3 . Recupere
 $produits=$statement->fetchAll(PDO::FETCH_ASSOC);
-var_dump($produits);
+// var_dump($produits);
 
 // $produits[0]=[
 //   "id"=>1,
@@ -62,5 +62,7 @@ foreach ($produits as $unProduit){ ?>
 ?>
  
 </div>
-Liste des produits
- 
+<br>
+<a href="/creerproduit" class="btn btn-lg btn-primary btn-block">
+                   Ajouter un produit
+</a> 

@@ -18,19 +18,18 @@
 
         <ul class=" nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             
-          <li><a href="/accueil" class="nav-link px-2 link-secondary text-white"><i class="fa-solid fa-house"></i> ACCUEIL</a></li>
-          <li><a href="/produits" class="nav-link px-2 link-body-emphasis text-white"><i class="fa-solid fa-bag-shopping"></i> PRODUITS</a></li>
-          <li><a href="/categorie" class="nav-link px-2 link-body-emphasis text-white"><i class="fa-solid fa-list"></i> CATEGORIES</a></li>
+          <li><a href="/accueil" class="nav-link px-2   text-white"><i class="fa-solid fa-house"></i> ACCUEIL</a></li>
+          <li><a href="/produits" class="nav-link px-2   text-white"><i class="fa-solid fa-bag-shopping"></i> PRODUITS</a></li>
+          <li><a href="/categories" class="nav-link px-2   text-white"><i class="fa-solid fa-list"></i> CATEGORIES</a></li>
          </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          <input type="search" class="form-control" placeholder="Rechercher..." aria-label="Search">
         </form>
 
-        <div class="dropdown text-end">
-          <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-          </a>
+        <div class="dropdown text-end" style="color: #ffffff;">
+          <a href="#" class="d-block   text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-user" style="color: #ffffff;"></i>         </a>
           <ul class="dropdown-menu text-small">
             <li><a class="dropdown-item" href="#">New project...</a></li>
             <li><a class="dropdown-item" href="#">Settings</a></li>
