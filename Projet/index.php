@@ -16,7 +16,8 @@ Qui appelle  le modele et la vue: le controller
 
   // routeur : gestion des URL 
   // integre ce qui est transverse a toutes les pages
-  $page=$_SERVER['PATH_INFO'];
+//  var_dump($_SERVER);
+  // $page=$_SERVER['PATH_INFO'];
   if ($page==="/produits"){
     include __DIR__."/Controlleur/ProduitControlleur.php";
   }
@@ -30,7 +31,7 @@ if ($page==="/accueil"){
   include "accueil.php";
 }
 elseif ($page==="/produits"){
-  include "produits.php";
+  include __DIR__.'/Controlleur/ProduitControlleur.php';
 }
 elseif ($page==="/categories"){
   include "categories.php";

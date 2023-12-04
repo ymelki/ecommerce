@@ -19,7 +19,7 @@
         <ul class=" nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             
           <li><a href="/accueil" class="nav-link px-2   text-white"><i class="fa-solid fa-house"></i> ACCUEIL</a></li>
-          <li><a href="/produits" class="nav-link px-2   text-white"><i class="fa-solid fa-bag-shopping"></i> PRODUITS</a></li>
+          <li><a href="/produits?action=readall" class="nav-link px-2   text-white"><i class="fa-solid fa-bag-shopping"></i> PRODUITS</a></li>
           <li><a href="/categories" class="nav-link px-2   text-white"><i class="fa-solid fa-list"></i> CATEGORIES</a></li>
          </ul>
 
