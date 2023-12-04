@@ -1,4 +1,12 @@
 <?php
+
+include __DIR__.'/Vue/header.php';
+if (isset($_SERVER['PATH_INFO'])){ 
+  $page=$_SERVER['PATH_INFO'];
+}
+else {
+  $page="/accueil";
+}
 /*
 Routeur : intercepte l'url :
 /produits 
@@ -12,17 +20,11 @@ Qui appelle  le modele et la vue: le controller
   if ($page==="/produits"){
     include __DIR__."/Controlleur/ProduitControlleur.php";
   }
-  die();
-  include "header.php";
+  // die();
 
 // var_dump($_SERVER);
 // var_dump($_SERVER);
-if (isset($_SERVER['PATH_INFO'])){ 
-  $page=$_SERVER['PATH_INFO'];
-}
-else {
-  $page="/accueil";
-}
+
 echo $page;
 if ($page==="/accueil"){
   include "accueil.php";
@@ -45,8 +47,12 @@ elseif ($page==="/creerproduit"){
 elseif ($page==="/enregistrerproduit"){
   include "enregistrerproduit.php";
 }
+elseif ($page==="/listeuser"){
+  include __DIR__.'/Controlleur/UserController.php';
+}
+
 else {
   include "erreur.php";
 }
-include "footer.php";
+include __DIR__.'/Vue/footer.php';
 ?>

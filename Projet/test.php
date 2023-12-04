@@ -5,7 +5,7 @@
 
 // sans MVC (avec B.D.)
 // avec MVC => tout le code en dessous
-// il faudra un controlleur qui va l'exprimer en faisant au
+// il faudra un controlleur qui va l'exprimer en faisant appel au
 // modele à la vue : décrire la logique. A ce controlleur sera affecté
 // une route
 // table prete
@@ -42,7 +42,8 @@ foreach ($users as $user){ ?>
    
 <?php 
 }
+
+// avec mvc
 ?>
 
 
-// avec mvc
