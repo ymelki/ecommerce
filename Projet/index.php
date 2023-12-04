@@ -18,9 +18,7 @@ Qui appelle  le modele et la vue: le controller
   // integre ce qui est transverse a toutes les pages
 //  var_dump($_SERVER);
   // $page=$_SERVER['PATH_INFO'];
-  if ($page==="/produits"){
-    include __DIR__."/Controlleur/ProduitControlleur.php";
-  }
+
   // die();
 
 // var_dump($_SERVER);
