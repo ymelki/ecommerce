@@ -1,6 +1,7 @@
 <?php
-require __DIR__.'/../Modele/Data.php';
+require_once __DIR__.'/../Modele/Data.php';
 $db=new Data();
+var_dump($_GET);
 $action=$_GET['action'];
 
 // lister tout les produits

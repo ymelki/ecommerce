@@ -7,4 +7,4 @@ $categories=$db->getRows("categorie");
 var_dump($categories);
 
 // ramene la vue
-// include __DIR__.'/../Vue/UserVue.php';
+include __DIR__.'/../Vue/CategoriesVue.php';
