@@ -35,9 +35,7 @@ elseif ($page==="/categories"){
   // redirection => controlleur
   include __DIR__.'/Controlleur/CategorieControlleur.php';
 }
-elseif ($page==="/categorie"){
-  echo "test";
-}
+ 
 elseif ($page==="/produit"){
   include "produit.php";
 }
@@ -47,9 +45,17 @@ elseif ($page==="/creerproduit"){
 elseif ($page==="/enregistrerproduit"){
   include "enregistrerproduit.php";
 }
-elseif ($page==="/listeuser"){
+// url : users ($_SERVER['path_info]) / PPE: $_GET['UC'] 
+elseif ($page==="/users"){
   include __DIR__.'/Controlleur/UserController.php';
 }
+
+// url :
+elseif ($page==="/categorie"){
+  echo "test23";
+  include __DIR__.'/Controlleur/CategorieControlleur.php';
+}
+
 
 else {
   include "erreur.php";

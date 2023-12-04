@@ -9,6 +9,7 @@ $action=$_GET['action'];
 if ($action==="readall"){
     $produits=$db->getRows("produit");
     var_dump($produits);
+   // $arrays=$produits;
 
     // ramene la vue
     include __DIR__.'/../Vue/ProduitsVue.php';

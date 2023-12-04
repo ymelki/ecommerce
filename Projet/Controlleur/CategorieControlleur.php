@@ -3,8 +3,22 @@
 // read all categorie
 require __DIR__.'/../Modele/Data.php';
 $db=new Data();
-$categories=$db->getRows("categorie");
-var_dump($categories);
+$action=$_GET['action'];
 
-// ramene la vue
-include __DIR__.'/../Vue/CategoriesVue.php';
+if ($action==="readall"){
+
+    $categories=$db->getRows("categorie");
+    var_dump($categories);
+
+    // ramene la vue
+    include __DIR__.'/../Vue/CategoriesVue.php';
+}
+
+if ($action==="readone"){
+
+    // click on one category
+    $id=$_GET['id'];
+    $categoryAndProduit=$db->getProduitCategorie($id);
+    var_dump($categoryAndProduit);
+}
+

@@ -7,6 +7,20 @@ class Data {
     {
         $this->pdo = new \PDO('mysql:host=localhost;dbname=ecommerce', 'root', '');
     }
+    public function getProduitCategorie($id){
+            $statement=$this->pdo->prepare("SELECT * FROM produit p
+                                    LEFT JOIN categorie C 
+                                    ON p.id_categorie=c.id 
+                                    where c.id=:monidprotege");
+            $statement->bindParam(':monidprotege', $id, PDO::PARAM_INT);
+        
+            $statement->execute();
+            // 3 . Recupere
+            $array=$statement->fetch(PDO::FETCH_ASSOC);
+            return $array;
+    
+
+    }
     // recuperer toutes les lignes
     public function getRows($table){
        

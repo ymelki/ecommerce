@@ -1,4 +1,25 @@
 <?php
+// comprendre en priorité $_GET en fait
+// enoncé :
+/**
+ * Impact sur la b.d. et sur le code
+ * quand je clique sur une catégorie
+ * je veux qu'une autre page s'ouvre
+ * et voir le nom de la catégorie
+ * avec les produits associés.
+ * 
+ * 1. quels sont les impacts sur la B.D ?
+ * 2. Mettre à jour la B.D. au niveau de la structure
+ * 3. créé des données de test 
+ * 4. a. je met a jour la classe Data 
+ *                    permettant de requeter en B.D
+ *    b.              la vue categories
+ *    c.              le controlleur categorie
+ *    d.   cree une nouvelle vue catorie qui affichera
+ *    e.   la catégorie avec les produits associés
+ *     cree la route dans le fichier index.
+ */
+
 // sans B.D
 // user
 
