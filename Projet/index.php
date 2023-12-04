@@ -32,10 +32,11 @@ elseif ($page==="/produits"){
   include __DIR__.'/Controlleur/ProduitControlleur.php';
 }
 elseif ($page==="/categories"){
-  include "categories.php";
+  // redirection => controlleur
+  include __DIR__.'/Controlleur/CategorieControlleur.php';
 }
 elseif ($page==="/categorie"){
-  include "categorie.php";
+  echo "test";
 }
 elseif ($page==="/produit"){
   include "produit.php";
