@@ -58,9 +58,16 @@ class Data {
     }
 
     // insert une seule ligne
-    public function insertRow(){
+    public function insertRow($nom, $prix){
+        $statement=$this->pdo->prepare("INSERT INTO produit (nom, prix) 
+        VALUES (:nom_protege, :prix_protege)");
+        $statement->bindParam(':nom_protege', $nom, PDO::PARAM_STR);
+        $statement->bindParam(':prix_protege', $prix, PDO::PARAM_INT);
 
+        $statement->execute();
+ 
     }
+
 }
 // $pdo = new \PDO('mysql:host=localhost;dbname=ecommerce', 'root', '');
 ?>

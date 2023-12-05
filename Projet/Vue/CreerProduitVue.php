@@ -5,7 +5,7 @@
                 <h3 class="panel-title">Ajouter un produit</h3>
             </div>
             <div class="panel-body">
-                <form role="form" method="post" action="/enregistrerproduit">
+                <form role="form" method="post" action="/produits?action=save">
                     <fieldset>
                         <div class="form-group">
                             <div class="input-group">
