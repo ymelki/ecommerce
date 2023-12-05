@@ -8,7 +8,12 @@ class Data {
         $this->pdo = new \PDO('mysql:host=localhost;dbname=ecommerce', 'root', '');
     }
     public function getProduitCategorie($id){
-            $statement=$this->pdo->prepare("SELECT * FROM produit p
+            $statement=$this->pdo->prepare("SELECT 
+                                            p.id as id,
+                                            p.nom as produit_nom,
+                                            p.prix,
+                                            c.nom as categorie_nom
+                                             FROM produit p
                                     LEFT JOIN categorie C 
                                     ON p.id_categorie=c.id 
                                     where c.id=:monidprotege");
@@ -16,7 +21,7 @@ class Data {
         
             $statement->execute();
             // 3 . Recupere
-            $array=$statement->fetch(PDO::FETCH_ASSOC);
+            $array=$statement->fetchAll(PDO::FETCH_ASSOC);
             return $array;
     
 

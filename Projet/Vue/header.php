@@ -20,7 +20,7 @@
             
           <li><a href="/accueil" class="nav-link px-2   text-white"><i class="fa-solid fa-house"></i> ACCUEIL</a></li>
           <li><a href="/produits?action=readall" class="nav-link px-2   text-white"><i class="fa-solid fa-bag-shopping"></i> PRODUITS</a></li>
-          <li><a href="/categories" class="nav-link px-2   text-white"><i class="fa-solid fa-list"></i> CATEGORIES</a></li>
+          <li><a href="/categories?action=readall" class="nav-link px-2   text-white"><i class="fa-solid fa-list"></i> CATEGORIES</a></li>
          </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">

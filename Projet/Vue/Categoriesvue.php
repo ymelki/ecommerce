@@ -8,9 +8,9 @@ foreach ($categories as $categorie){ ?>
       <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">
-          <a href="/produit?id=<?=$categorie['id']; ?>"></a>
+          
         </h5>
-        <p class="card-text"><?=$categorie['nom']; ?></p>
+        <p class="card-text"><a href="/categorie?id=<?=$categorie['id']; ?>&action=readone"><?=$categorie['nom']; ?></a></p>
       </div>
     </div>
   </div>
