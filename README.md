@@ -19,3 +19,11 @@ on a créé un CRUD sans B.D. sur produit :
 pareil pour utilisateur et categorie  
 
 Tout cela en MVC  
+
+1. refaire tout le projet.  
+2. Faire pareil que ce qu'on a fait sur l'ajout de produit avec la catégorie.  
+3. ajouter les images  
+ - Créé une colonne nom_image dans la table produit
+ - dans la requete d'insertion il faudra inserer le nom de l'image
+ - il faut stocker dans le serveur les images réél.  
+https://espritweb.fr/comment-uploader-une-image-en-php/

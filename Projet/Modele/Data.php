@@ -58,11 +58,12 @@ class Data {
     }
 
     // insert une seule ligne
-    public function insertRow($nom, $prix){
-        $statement=$this->pdo->prepare("INSERT INTO produit (nom, prix) 
-        VALUES (:nom_protege, :prix_protege)");
+    public function insertRow($nom, $prix, $categorie){
+        $statement=$this->pdo->prepare("INSERT INTO produit (nom, prix, id_categorie) 
+        VALUES (:nom_protege, :prix_protege, :macategorie)");
         $statement->bindParam(':nom_protege', $nom, PDO::PARAM_STR);
         $statement->bindParam(':prix_protege', $prix, PDO::PARAM_INT);
+        $statement->bindParam(':macategorie', $categorie, PDO::PARAM_INT);
 
         $statement->execute();
  

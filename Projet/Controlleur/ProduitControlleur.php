@@ -27,6 +27,8 @@ if ($action==="readone"){
 
 // creer
 if ($action==="cree"){
+    $categories=$db->getRows("categorie");
+    // var_dump($categories);
     //echo "controlleur cree";
       // ramene la vue
       include __DIR__.'/../Vue/CreerProduitVue.php';
@@ -40,7 +42,8 @@ if ($action==="save"){
     // stocké les données dans des variables
     $nom=$_POST['nomProduit'];
     $prix=$_POST['prixProduit'];
-    $db->insertRow($nom, $prix);
+    $categorie=$_POST['categorie'];
+    $db->insertRow($nom, $prix, $categorie);
 
         
     // // 2 Connecte a la B.D.

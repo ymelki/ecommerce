@@ -24,6 +24,17 @@
                                 <input class="form-control" placeholder="Prix"
                                        name="prixProduit" type="number" step="0.01" required>
                             </div>
+
+                            <label for="pet-select">Choose a pet:</label>
+
+                    <select name="categorie" id="pet-select">
+                        <option value="">--Please choose an option--</option>
+                      <?php foreach ($categories as $categorie){ ?>
+                          <option value="<?=$categorie['id']?>"><?=$categorie['nom']?></option>
+
+                      <?php } ?>
+                    </select>
+
                         </div>
                         <input class="btn btn-lg btn-success btn-block"
                                type="submit" value="Ajouter le produit">
