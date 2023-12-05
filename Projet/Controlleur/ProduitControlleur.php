@@ -25,4 +25,11 @@ if ($action==="readone"){
     include __DIR__.'/../Vue/ProduitVue.php';
 }
 
+// creer
+if ($action==="cree"){
+    //echo "controlleur cree";
+      // ramene la vue
+      include __DIR__.'/../Vue/CreerProduitVue.php';
+}
+
 // suprimer un produit

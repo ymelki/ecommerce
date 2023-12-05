@@ -19,3 +19,8 @@ foreach ($produits as $unProduit){
 <?php 
 }
 ?>
+</div>
+<a href="/produits?action=cree" class="btn btn-lg btn-primary btn-block">
+                   Ajouter un produit
+</a> 
+

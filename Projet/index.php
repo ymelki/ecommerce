@@ -39,9 +39,7 @@ elseif ($page==="/categories"){
 elseif ($page==="/produit"){
   include "produit.php";
 }
-elseif ($page==="/creerproduit"){
-  include "creerproduit.php";
-}
+ 
 elseif ($page==="/enregistrerproduit"){
   include "enregistrerproduit.php";
 }
@@ -55,7 +53,8 @@ elseif ($page==="/categorie"){
   echo "test23";
   include __DIR__.'/Controlleur/CategorieControlleur.php';
 }
-
+// url :
+ 
 
 else {
   include "erreur.php";
